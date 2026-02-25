@@ -299,6 +299,17 @@ Microsoft Edge for Android can be enabled as a kiosk app with the following sett
 > [!NOTE]
 > Kiosk mode isn't supported on iOS/iPadOS devices. However, you might want to use Locked View Mode (MDM policy only) to achieve a similar user experience, where users are unable to navigate to other websites, as the URL address bar becomes read-only in Locked View Mode.
 
+### Screen Capture Block 
+
+For some scenarios, you may wish to allow screen capture while retaining the existing APP configuration, such as allowing screen capture and sharing to policy managed apps.
+
+Key
+com.microsoft.intune.mam.screencapturecontrol
+Value
+Enabled / Disabled
+
+com.microsoft.intune.mam.screencapturecontrol = Disabled” to override the default behavior and allow screen capture. 
+
 ### Locked view mode
 
 Microsoft Edge for iOS and Android can be enabled as locked view mode with MDM policy **[EdgeLockedViewModeEnabled](/deployedge/microsoft-edge-mobile-policies#edgelockedviewmodeenabled)**.
